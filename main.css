@@ -1,0 +1,68 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.bg {
+    /* The image used */
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background: url("img3.jpg") no-repeat center;
+    background-size: cover;
+}
+.flex-container {
+    display: flex;
+    /*align-content: center;*/
+    /*justify-content: flex-end;*/
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 15%;
+    padding-right: 4%;
+}
+.form-box {
+    width: 30%;
+    height: 600px;
+    /*background-color: #f0f8ff8c;*/
+    background-color: red;
+}
+/*input{*/
+    /*border: none transparent;*/
+    /*background-color: transparent;*/
+/*}*/
+.effect-11 ~ .focus-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ededed;
+    transition: 0.3s;
+    z-index: -1;
+}
+.effect-11:focus ~ .focus-bg {
+    transition: 0.3s;
+    width: 100%;
+}
+.effect-11 {
+    padding: 7px 15px;
+    border: 1px solid #ccc;
+    position: relative;
+    background: transparent;
+}
+:focus {
+    outline: none;
+}
+
+/* necessary to give position: relative to parent. */
+input[type="text"] {
+    font: 15px/24px "Muli", sans-serif;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+:focus {
+    outline: none;
+}
+
