@@ -1,11 +1,10 @@
 body, html {
-    height: 100%;
+
     margin: 0;
 }
 .bg {
     /* The image used */
-    /* Full height */
-    height: 100%;
+    /* Full height   height: 100%;
     /* Center and scale the image nicely */
     background: url("img3.jpg") no-repeat center;
     background-size: cover;
@@ -16,31 +15,55 @@ body, html {
     /*justify-content: flex-end;*/
     align-items: center;
     justify-content: flex-end;
-    padding-top: 15%;
-    padding-right: 4%;
+    padding-top: 25px;
+    padding-right: 50px;
 }
+input{
+    width:100%;
+    box-sizing: border-box;
+    margin: 10px 10px 10px 0px;
+    font: 15px/24px "Muli", sans-serif;
+
+}
+h2{
+    color:#ccc;
+}
+textarea{
+    background: transparent;
+    font: 15px/24px "Muli", sans-serif;
+    width: 98.6%;
+    height:20%;
+    margin: 10px 10px 10px 0px;
+
+
+}
+input:focus{
+    border:1px solid blue;
+
+}
+
 .form-box {
     width: 30%;
     height: 600px;
     /*background-color: #f0f8ff8c;*/
-    background-color: red;
+    background-color: #0000005e;
 }
 /*input{*/
     /*border: none transparent;*/
     /*background-color: transparent;*/
 /*}*/
-.effect-11 ~ .focus-bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 0;
-    height: 100%;
-    background-color: #ededed;
-    transition: 0.3s;
-    z-index: -1;
-}
+/*.effect-11 ~ .focus-bg {*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*width: 0;*/
+    /*height: 100%;*/
+    /*background-color: #ededed;*/
+    /*transition: 0.3s;*/
+    /*z-index: -1;*/
+/*}*/
 .effect-11:focus ~ .focus-bg {
-    transition: 0.3s;
+    /*transition: 0.3s;*/
     width: 100%;
 }
 .effect-11 {
@@ -50,7 +73,7 @@ body, html {
     background: transparent;
 }
 :focus {
-    outline: none;
+    //outline: none;
 }
 
 /* necessary to give position: relative to parent. */
